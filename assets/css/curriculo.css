@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,411&family=Raleway:wght@395&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif, Arial;
+}
+
+.header {
+    background-color: #000;
+    width: 100%;
+    height: 102px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+.header img{
+    width: 100%;
+}
+
+
+.page{
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    color: #000;
+}
+
+#menu {
+    margin: auto;
+    width: 30%;
+    margin-top: 5px;
+    height: 40px;
+    font-size: 18px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #000;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+
+
+#menu a:hover {
+    border-bottom: rgb(1, 15, 36) solid 3px;
+
+    
+}
+
+
+footer {
+    height: 35px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 15px; 
+    font-weight: bold;
+    bottom: 0 !important;
+    position: relative;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px
+}
+
+#footer{
+    width: 100%; 
+    margin: 80px 0 0 0;
+}
+
+
+
+
+/* RESPONSIVIDADE PARA COMPUTADOR MENOR */
+@media (min-width: 769px) and (max-width: 1140px) {
+
+    #menu {
+        width: 50%;
+    }
+}
+/* RESPONSIVIDADE PARA TABLETS */
+@media (min-width: 426px) and (max-width: 768px){
+    
+    #menu {
+        width: 60%;
+    }
+}
+/*RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS*/
+@media (max-width: 425px) {
+
+    #menu {
+        width: 100%;
+    }
+    #sobre img {
+        width: 300px;  
+    }
+    .header {
+        max-height: 80px;
+    }
+}
